@@ -1,6 +1,6 @@
 afpa\cdi\elastique\panier\devweb\ICommand.class
+afpa\cdi\elastique\panier\commun\IConstantes.class
 afpa\cdi\elastique\panier\commandes\InitCommande.class
 afpa\cdi\elastique\panier\commandes\CheckboxCheckedCommande.class
 afpa\cdi\elastique\panier\servlet\FrontControler.class
 afpa\cdi\elastique\panier\commandes\LoginCommande.class
-afpa\cdi\elastique\panier\commun\IConstantes.class

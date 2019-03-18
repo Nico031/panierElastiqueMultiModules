@@ -1,4 +1,1 @@
-afpa\cdi\elastique\panier\dao\impl\TestDAO.class
-afpa\cdi\elastique\panier\dao\impl\FamilleDAO.class
-afpa\cdi\elastique\panier\dao\impl\DAOFactoryJDBC.class
 afpa\cdi\elastique\panier\dao\util\ConnectBDD.class
