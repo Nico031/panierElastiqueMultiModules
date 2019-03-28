@@ -14,7 +14,12 @@ import afpa.cdi.elastique.panier.services.ServiceFiltre;
  *
  */
 
+/*@ManagedBean permet de préciser au serveur que ce bean est dorénavant géré par JSF. Cela signifie simplement que JSF 
+ va utiliser ce bean en tant que modèle associé à une ou plusieurs vues. Par défaut, le nom du bean correspond au nom 
+ de la classe, la majuscule en moins*/
 @ManagedBean
+
+// on précise au serveur la portée de ce bean. Ici portée = session
 @SessionScoped
 public class HelloBean implements Serializable{
 
@@ -29,5 +34,8 @@ public class HelloBean implements Serializable{
 	public String getCoucou() {
 		return "Coucou";
 	}
+	
+	
+	
 
 }

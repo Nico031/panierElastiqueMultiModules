@@ -36,9 +36,15 @@ public class ConnectBDD {
 
 		// configuration de la connexion (toujours de type protocole: sous-protocole:
 		// nom)
-		String url = "jdbc:oracle:thin:@10.114.132.120:1521/xe";
+		/*String url = "jdbc:oracle:thin:@10.114.132.120:1521/xe";
 		String user = "panier2019";
-		String psswd = "panier2019";
+		String psswd = "panier2019";*/
+		
+		String url = "jdbc:oracle:thin:@localhost:1521:xe";
+		String user = "AdminApp";
+		String psswd = "AdminApp";
+		
+	
 		
 		if (connect == null) {
 			try {

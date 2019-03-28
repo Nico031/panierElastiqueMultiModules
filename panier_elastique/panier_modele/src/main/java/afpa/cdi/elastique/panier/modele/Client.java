@@ -2,6 +2,7 @@ package afpa.cdi.elastique.panier.modele;
 
 import java.io.Serializable;
 
+
 public class Client implements Serializable {
 
 
@@ -13,7 +14,7 @@ public class Client implements Serializable {
 	/**
 	 * identifiant du client
 	 */
-	private String identifiant;
+	private String login;
 	
 	/**
 	 * mot de passe du client
@@ -37,17 +38,17 @@ public class Client implements Serializable {
 	 */
 	public Client(String ident, String mdp) {
 		super();
-		this.identifiant 	= ident;
-		this.password 		= mdp;
+		this.login 		= ident;
+		this.password 	= mdp;
 	}
 
 
-	public String getIdentifiant() {
-		return identifiant;
+	public String getLogin() {
+		return login;
 	}
 
-	public void setIdentifiant(String identifiant) {
-		this.identifiant = identifiant;
+	public void setLogin(String identifiant) {
+		this.login = identifiant;
 	}
 
 	public String getPassword() {
@@ -66,7 +67,7 @@ public class Client implements Serializable {
 	 */
 	public boolean validate() {
 		
-		if (this.identifiant.equals("lana") && this.password.equals("travail!")) {
+		if (this.login.equals("lana") && this.password.equals("travail!")) {
 			return true;
 		} else {
 			return false;
@@ -74,7 +75,7 @@ public class Client implements Serializable {
 	}
 	
 	public String toString() {
-		return "Ident = " + this.getIdentifiant() + "  Pass = " + this.getPassword();
+		return "Ident = " + this.getLogin() + "  Pass = " + this.getPassword();
 	}
 
 	

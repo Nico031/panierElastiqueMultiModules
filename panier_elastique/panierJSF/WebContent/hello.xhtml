@@ -2,15 +2,38 @@
 <!DOCTYPE html PUBLIC 
 	"-//W3C//DTD XHTML 1.0 Strict//EN" 
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	
+	<!-- bibliothèques de balises -->
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:h="http://java.sun.com/jsf/html">
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"	
+	xmlns:p="http://primefaces.org/ui">
 <h:head>
 	<title>Hello</title>
 </h:head>
 
 <h:body>
 	     #{helloBean.coucou}
+	     
 <h3>Le monde!</h3>
+
+	<h:form>
+		<h3 style="margin-top: 0px">Checkbox Basic Layout avec Primefaces</h3>
+		<p:selectManyCheckbox id="basic"
+			value="#{checkboxView.selectedConsoles}">
+			<f:selectItem itemLabel="Xbox One" itemValue="Xbox One" />
+			<f:selectItem itemLabel="PS4" itemValue="PS4" />
+			<f:selectItem itemLabel="Wii U" itemValue="Wii U" />
+		</p:selectManyCheckbox>
+
+		<h3>Checkbox Grouped</h3>
+		<p:selectManyCheckbox id="grid3" value="#{checkboxView.selectedCars}"
+			layout="pageDirection" columns="1">
+			<f:selectItems value="#{checkboxView.cars}" var="car"
+				itemLabel="#{car}" itemValue="#{car}" />
+		</p:selectManyCheckbox>
+	</h:form>
+
 </h:body>
 </html>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC 
+	"-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:ui="http://java.sun.com/jsf/facelets">
+    
+    <h:head>
+        <title>Login</title>
+    </h:head>
+    
+    <h:body>
+    
+    	<h1>Veuillez vous identifier</h1>
+    	
+    	<!-- en JSF, la methode envoie des données des formalaires est par default POST -->
+        <h:form>
+        
+        	<h:outputLabel for="login">Login</h:outputLabel>
+        	<!-- champs de saisi JSF lié à la propriété "login" de l'objet client du managedBean loginBean -->
+        	<h:inputText id="login" value="#{loginBean.client.login}" required="true"/>
+        	<br></br>
+        	<br></br>
+        	<h:outputLabel for="psswd" required="true">Password</h:outputLabel>
+        	<h:inputSecret id="psswd" value="#{loginBean.client.password}" required="true" />
+        	<br></br>
+        	<br></br>
+        	<!-- "action" permet de rediriger vers la page souhaitée lors du clique bouton : indiquer nom de la page xhtml -->
+        	<h:commandButton value="Se connecter" action="catalogue"/>
+        </h:form>
+    </h:body>
+</html>

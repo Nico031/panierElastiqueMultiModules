@@ -56,12 +56,8 @@
 		</dependency>
 
 		<!-- EL 2.2 to support method parameter in EL -->
-		<!-- <dependency>
-			<groupId>org.glassfish.web</groupId>
-			<artifactId>el-impl</artifactId>
-			<version>2.2</version>
-		</dependency>
- -->
+		<!-- <dependency> <groupId>org.glassfish.web</groupId> <artifactId>el-impl</artifactId> 
+			<version>2.2</version> </dependency> -->
 
 		<!-- Dépendance vers la librairie JSTL -->
 		<dependency>
@@ -96,6 +92,18 @@
 			<groupId>afpa.cdi.elastique</groupId>
 			<artifactId>panierBusiness</artifactId>
 		</dependency>
+		
+		<dependency>
+			<groupId>afpa.cdi.elastique</groupId>
+			<artifactId>panier_modele</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.primefaces</groupId>
+			<artifactId>primefaces</artifactId>
+			<version>6.2</version>
+		</dependency>
+
 	</dependencies>
 
 </project>

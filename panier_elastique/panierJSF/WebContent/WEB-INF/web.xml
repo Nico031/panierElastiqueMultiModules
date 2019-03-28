@@ -8,7 +8,7 @@
 
 
 	<welcome-file-list>
-		<welcome-file>faces/hello.xhtml</welcome-file>
+		<welcome-file>faces/login.xhtml</welcome-file>
 	</welcome-file-list>
 
 
@@ -38,6 +38,7 @@
 		<url-pattern>*.xhtml</url-pattern>
 	</servlet-mapping>
 
+	<!-- Permet d'afficher les erreurs sur la page, en mode "Development". Changer cette valeur à "Production" lors du déploiement final de l'application -->
 	<context-param>
 		<param-name>javax.faces.PROJECT_STAGE</param-name>
 		<param-value>Development</param-value>
