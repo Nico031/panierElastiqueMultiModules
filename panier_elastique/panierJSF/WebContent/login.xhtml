@@ -13,22 +13,32 @@
     
     <h:body>
     
-    	<h1>Veuillez vous identifier</h1>
+    	<h1>Accès au catalogue</h1>
+    	<h2>Veuillez vous identifier</h2>
     	
-    	<!-- en JSF, la methode envoie des données des formalaires est par default POST -->
+    	<!-- en JSF, la methode d'envoi des données des formalaires est par default POST -->
         <h:form>
-        
+        	    
         	<h:outputLabel for="login">Login</h:outputLabel>
+        	
         	<!-- champs de saisi JSF lié à la propriété "login" de l'objet client du managedBean loginBean -->
-        	<h:inputText id="login" value="#{loginBean.client.login}" required="true"/>
-        	<br></br>
+        	<h:inputText id="login" value="#{loginBean.login}" required="true"
+        				requiredMessage="La saisie du login est obligatoire!"/>
+        				
+        	<!-- on affiche le requriedMessage a cote du champs, pour guider l'utilisateur -->
+        	<h:message for="login" styleClass="errorBlock" />
+       		<br></br>
         	<br></br>
         	<h:outputLabel for="psswd" required="true">Password</h:outputLabel>
-        	<h:inputSecret id="psswd" value="#{loginBean.client.password}" required="true" />
+        	<h:inputSecret id="psswd" value="#{loginBean.password}" required="true" 
+        				requiredMessage="La saisie du mot de passe est obligatoire!"/>
+        	<h:message for="psswd" styleClass="errorBlock" />
         	<br></br>
         	<br></br>
-        	<!-- "action" permet de rediriger vers la page souhaitée lors du clique bouton : indiquer nom de la page xhtml -->
-        	<h:commandButton value="Se connecter" action="catalogue"/>
+        	<!-- "action" permet de rediriger vers la page souhaitée lors du clique bouton : indiquer nom de la page 
+        	xhtml ou de la méthode qui dirige vers de pages via la <navigation-rule> dans faces-config-->
+        	<h:commandButton value="Se connecter" action="#{loginBean.validate}"/>
+        	
         </h:form>
     </h:body>
 </html>

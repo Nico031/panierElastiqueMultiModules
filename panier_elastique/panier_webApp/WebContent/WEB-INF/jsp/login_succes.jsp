@@ -29,7 +29,7 @@
 
 	<header>
 		<p>
-			Connexion réussie. Bonjour <%=client.getIdentifiant()%> !
+			Connexion réussie. Bonjour <%=client.getLogin()%> !
 			
 		</p>
 		<h1>ElastiCity</h1>

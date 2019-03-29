@@ -94,11 +94,6 @@
 		</dependency>
 		
 		<dependency>
-			<groupId>afpa.cdi.elastique</groupId>
-			<artifactId>panier_modele</artifactId>
-		</dependency>
-		
-		<dependency>
 			<groupId>org.primefaces</groupId>
 			<artifactId>primefaces</artifactId>
 			<version>6.2</version>

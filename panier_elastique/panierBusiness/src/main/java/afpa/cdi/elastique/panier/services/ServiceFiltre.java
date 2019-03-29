@@ -6,11 +6,11 @@ import java.util.List;
 
 import afpa.cdi.elastique.panier.beans.BlocFiltre;
 import afpa.cdi.elastique.panier.beans.LigneFiltre;
-import afpa.cdi.elastique.panier.dao.impl.DAOFactoryJDBC;
-import afpa.cdi.elastique.panier.dao.impl.FamilleDAO;
-import afpa.cdi.elastique.panier.modele.Famille;
-import afpa.cdi.elastique.panier.persistance.DAO;
-import afpa.cdi.elastique.panier.persistance.IDAOFactory;
+import fr.afpa.panier.dao.impl.DAOFactoryJDBC;
+import fr.afpa.cdi.panier.dao.impl.FamilleDAO;
+import fr.afpa.panier.modele.Famille;
+import fr.afpa.panier.persistance.DAO;
+import fr.afpa.panier.persistance.IDAOFactory;
 
 
 /**

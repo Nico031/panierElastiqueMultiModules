@@ -20,7 +20,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>afpa.cdi.elastique</groupId>
-			<artifactId>panier_modele</artifactId>
+			<artifactId>panier_elastique</artifactId>
 		</dependency>
 	</dependencies>
 

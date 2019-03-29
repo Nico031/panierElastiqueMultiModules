@@ -15,17 +15,13 @@
 		<java.version>1.8</java.version>
 	</properties>
 
-
-
-
-
 	<modules>
 		<module>panier_modele</module>
 		<module>panierDAO</module>
 		<module>panierBusiness</module>
 		<module>panier_webApp</module>
 		<module>panierDAOInterfaces</module>
-    <module>panierJSF</module>
+   		<module>panierJSF</module>
   </modules>
 
 	<dependencyManagement>
@@ -48,7 +44,7 @@
 			</dependency>
 			<dependency>
 				<groupId>afpa.cdi.elastique</groupId>
-				<artifactId>panierDAO</artifactId>
+				<artifactId>panier_DAO</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>

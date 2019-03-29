@@ -3,13 +3,13 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>afpa.cdi.elastique</groupId>
-    <artifactId>panier_elastique</artifactId>
+    <groupId>fr.afpa.panier</groupId>
+    <artifactId>PanierParent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>panier_modele</artifactId>
   <packaging>jar</packaging>
-  <name>panier_modele</name>
+  <name>PanierModele</name>
   
   
   <dependencies>
