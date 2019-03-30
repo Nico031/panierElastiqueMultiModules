@@ -3,42 +3,43 @@
 	"-//W3C//DTD XHTML 1.0 Strict//EN" 
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:f="http://java.sun.com/jsf/core"
-    xmlns:h="http://java.sun.com/jsf/html"
-    xmlns:ui="http://java.sun.com/jsf/facelets">
-    
-    <h:head>
-        <title>Login</title>
-    </h:head>
-    
-    <h:body>
-    
-    	<h1>Accès au catalogue</h1>
-    	<h2>Veuillez vous identifier</h2>
-    	
-    	<!-- en JSF, la methode d'envoi des données des formalaires est par default POST -->
-        <h:form>
-        	    
-        	<h:outputLabel for="login">Login</h:outputLabel>
-        	
-        	<!-- champs de saisi JSF lié à la propriété "login" de l'objet client du managedBean loginBean -->
-        	<h:inputText id="login" value="#{loginBean.login}" required="true"
-        				requiredMessage="La saisie du login est obligatoire!"/>
-        				
-        	<!-- on affiche le requriedMessage a cote du champs, pour guider l'utilisateur -->
-        	<h:message for="login" styleClass="errorBlock" />
-       		<br></br>
-        	<br></br>
-        	<h:outputLabel for="psswd" required="true">Password</h:outputLabel>
-        	<h:inputSecret id="psswd" value="#{loginBean.password}" required="true" 
-        				requiredMessage="La saisie du mot de passe est obligatoire!"/>
-        	<h:message for="psswd" styleClass="errorBlock" />
-        	<br></br>
-        	<br></br>
-        	<!-- "action" permet de rediriger vers la page souhaitée lors du clique bouton : indiquer nom de la page 
-        	xhtml ou de la méthode qui dirige vers de pages via la <navigation-rule> dans faces-config-->
-        	<h:commandButton value="Se connecter" action="#{loginBean.validate}"/>
-        	
-        </h:form>
-    </h:body>
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<title>Login</title>
+</h:head>
+
+<h:body>
+
+	<h1>Accès au catalogue</h1>
+
+	<h2>Veuillez vous identifier</h2>
+
+	<!-- en JSF, la methode d'envoi des données des formalaires est par default POST -->
+	<h:form>
+
+		<h:outputLabel for="login">Login</h:outputLabel>
+
+		<!-- champs de saisi JSF lié à la propriété "login" du managedBean loginBean -->
+		<h:inputText id="login" value="#{loginBean.login}" required="true"
+			requiredMessage="La saisie du login est obligatoire!" />
+		<!-- on affiche le requriedMessage a cote du champs, pour guider l'utilisateur -->
+		<h:message for="login" styleClass="errorBlock" />
+		<br></br>
+		<br></br>
+		<h:outputLabel for="psswd" required="true">Password</h:outputLabel>
+		<h:inputSecret id="psswd" value="#{loginBean.password}"
+			required="true"
+			requiredMessage="La saisie du mot de passe est obligatoire!" />
+		<h:message for="psswd" styleClass="errorBlock" />
+		<br></br>
+		<br></br>
+		<!-- "action" permet de rediriger vers la page souhaitée lors du clique bouton : indiquer nom de la page 
+        	xhtml ou de la méthode du manageBean qui redirige vers de pages via la <navigation-rule> dans faces-config-->
+		<h:commandButton value="Se connecter" action="#{loginBean.validate}" />
+
+	</h:form>
+</h:body>
 </html>
